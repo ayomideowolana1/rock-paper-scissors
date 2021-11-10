@@ -1,9 +1,12 @@
+// variables
 let playerSelection,computerSelection;
 
+// get the computers choice and return it  
 function computerPlay(){
     // get a random number between 0 and 2
     let randomNumber = Math.floor(Math.random()* 3);
     let result;
+     
     switch(randomNumber){
         case 0:
             result = "Rock";
@@ -20,6 +23,7 @@ function computerPlay(){
     return result;
 }
 
+// game logic to determine the winner
 function getWinner(playerOpt,computerOpt){
 
     if(computerOpt == "Rock" && playerOpt == "Paper"){
@@ -41,6 +45,7 @@ function getWinner(playerOpt,computerOpt){
     }
 }
 
+// game main function
 function gameOn(){
     playerSelection = prompt("What do you choose? ");
     computerSelection = computerPlay();
