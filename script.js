@@ -1,4 +1,4 @@
-// variables
+// global variables
 let playerSelection,computerSelection;
 
 // get the computers choice and return it  
@@ -6,7 +6,8 @@ function computerPlay(){
     // get a random number between 0 and 2
     let randomNumber = Math.floor(Math.random()* 3);
     let result;
-     
+    
+    // switch random number for a game option
     switch(randomNumber){
         case 0:
             result = "Rock";
@@ -20,6 +21,7 @@ function computerPlay(){
         default:
             result = null;
     }
+    
     return result;
 }
 
