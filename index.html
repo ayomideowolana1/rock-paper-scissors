@@ -7,6 +7,25 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Rock Paper Scissors</h1>
+    <button id="start"> Start game</button>
+    <button id = "reset"> Reset game</button>
+    <br><br>
+
+   <div id="gameCont" style="visibility: hidden;">
+        <h2 id="gameStatus">Round: <span class="roundNum">1</span></h2>
+
+        <h2>Scores <br>
+            <span >Player <span id="playerScore">0</span> -</span>
+            <span ><span id="computerScore">0</span> Computer</span>
+        </h2>
+
+        <button id="Rock" class="gameButton">Rock</button>
+        <button id="Paper" class="gameButton">Paper</button>
+        <button id="Scissors" class="gameButton">Scissors</button>
+        <p id="roundStatus">Round <span class="roundNum">1</span> result:</p>
+        <h2 id="gameResult"></h2>
+   </div>
     <script src="script.js"></script>
 </body> 
 </html>
